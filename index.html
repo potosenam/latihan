@@ -453,7 +453,7 @@
         
         <div class="action-buttons">
             <button class="btn btn-copy" id="copyReportBtn"><i class="fas fa-copy"></i> Salin Laporan (Jawaban + Kunci)</button>
-            <button class="btn btn-success" id="sendWhatsAppBtn"><i class="fab fa-whatsapp"></i> Kirim Hasil ke WA 085143884484</button>
+            <button class="btn btn-success" id="sendWhatsAppBtn"><i class="fab fa-whatsapp"></i> Kirim Hasil ke WA 6285143884484</button>
         </div>
         <button class="btn btn-success" id="backToQuestionsBtn" style="margin-top: 10px;"><i class="fas fa-arrow-left"></i> Kembali ke Soal</button>
     </div>
@@ -681,10 +681,10 @@
             if ((i+1) % 10 === 0) compactDetails += "\n";
         }
         const message = `Halo,\n\nNama: ${senderName}\nKelas: ${senderClass}\nNo Absen: ${senderAbsen}\n\nSaya telah mengerjakan latihan 100 soal IPAS SD kelas 5.\n✨ NILAI: ${score}/100 ✨\n\n📋 Rincian Jawaban vs Kunci (No:Jawabanmu/Kunci):\n${compactDetails}\n\n---\nTerima kasih. 🔥 Tetap semangat belajar!`;
-        const whatsappLink = `https://wa.me/085143884484?text=${encodeURIComponent(message)}`;
+        const whatsappLink = `https://wa.me/6285143884484?text=${encodeURIComponent(message)}`;
         window.open(whatsappLink, '_blank');
         setTimeout(() => {
-            showToastMessage('📱 Membuka WhatsApp... Kirimkan ke 085143884484');
+            showToastMessage('📱 Membuka WhatsApp... Kirimkan ke 6285143884484');
         }, 300);
     }
 
